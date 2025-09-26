@@ -111,7 +111,7 @@ const MyProjects = () => {
               key={idx}
               to={pj.url}
               target="_blank"
-              rel="noopener noreferrer"   
+              rel="noopener noreferrer "   
             >
               <div ref={pjref} className="cardpj h-60 bg-black/40  rounded-lg shadow-xs shadow-white/20 hover:shadow-xl  hover:scale-105 transition-transform duration-300 flex flex-col items-center p-4 animate-fade-in-up"
               style={{
