@@ -10,6 +10,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { TbBrandNodejs } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
+import { DiNodejs } from "react-icons/di";
 const About = () => {
   const aboutRef = useRef(null);
   const skillRef = useRef(null);
@@ -109,13 +110,13 @@ const About = () => {
             Skills
           </div>
           <div className="text-6xl grid gap-5 sm:grid-cols-3  md:grid-cols-4 lg:grid-cols-6 ">
-            <FaHtml5 className="text-red-600 " />
-            <MdCss className="text-orange-400"  />
-            <TbBrandJavascript className="text-yellow-800" />
+            <FaHtml5 className="text-red-600 bg-black/80 " />
+            <MdCss className="text-orange-400 bg-black/80"  />
+            <TbBrandJavascript className="text-yellow-800 bg-black/80" />
             <SiReactquery className="text-blue-200 bg-black/80 "/>
             <SiTailwindcss className="text-blue-200 bg-black/80"/>
             <FaBootstrap className="text-yellow-400 bg-black/80"/>
-            <TbBrandNodejs className="text-yellow-400 bg-black/80" />
+            <DiNodejs  className="text-blue-200 bg-black/80" />
             <SiExpress className=" bg-black/80" />
             <BiLogoMongodb className="bg-gray-500/40 text-emerald-800"/>
           </div>
