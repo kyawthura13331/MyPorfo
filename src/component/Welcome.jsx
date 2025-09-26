@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import myphoto from "../assets/media/myPhotoFF.jpg";
+import myphoto from "../assets/media/myphotoFF.jpg";
 import PjList from "./PjList";
 
 const Welcome = () => {
