@@ -1,0 +1,218 @@
+/* Add these to your <style> tag */
+.animate-fade-in {
+  animation: fadeIn 1.5s ease both forward;
+}
+.animate-slide-in {
+  animation: slideIn 1.5s ease both forwards;
+}
+.animate-move-left {
+  animation: moveLeft 1.5s ease forwards;
+}
+.animate-move-reset {
+  animation: moveReset 1.5s ease-in-out forwards;
+}
+.animateSmall {
+  animation: moveLeftInSm 1.5s ease;
+}
+.moveresetContact {
+  animation: moveresetContact 1s ease both;
+}
+.autoshow {
+  overflow-x: auto;
+  scroll-snap-type: Y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(87, 126, 162);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(60, 63, 60);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(48, 48, 103);
+  border-radius: 10px;
+  border: 2px solid rgb(26, 62, 29);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(98, 93, 93);
+  border-radius: 20px;
+  border: 2px solid rgb(28, 28, 28);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes moveresetContact {
+  from {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-90px);
+  }
+}
+@keyframes moveLeftInSm {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+@keyframes moveReset {
+  from {
+    transform: translateX(-90px);
+  }
+  to {
+    transform: translateX(-20px);
+  }
+}
+@keyframes scrollbar {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.welcomecss{
+  background-color: #190933;
+  color: #EAF6FF;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.navi{
+  background: #472D4B;
+  color: #EAF6FF;
+}
+
+.aboutcss{
+  background-color: #190933;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  border: #EAF6FF;
+}
+ .skillcss{
+  background-color: #d4d3d9;
+ 
+}
+.skillcss li{
+  color: #190933;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contactcss {
+  background-color: #190933;
+}
+.box {
+  animation: boundIn 3s linear infinite;
+}
+@keyframes boundIn{
+  0% {transform: translateY(0);}
+  50%{transform: translateY(30px);}
+}
+/* From Uiverse.io by VijinV */ 
+.inputbox {
+  position: relative;
+  width: fit-contents;
+}
+
+.inputbox input,textarea {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: #45f3ff;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0.75em;
+}
+.inputbox textarea:valid ~span,
+.inputbox textarea:focus ~span {
+  color: #45f3ff;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0.75em;
+}
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+.inputbox textarea:valid ~i,
+.inputbox textarea:focus ~i {
+  height: 140px;
+}
+
+
+
+
+
+
+
