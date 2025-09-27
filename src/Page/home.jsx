@@ -14,7 +14,7 @@ const Home = () => {
       <div className='min-h-screen flex justify-center'>
         <Welcome />
       </div>
-      <Content />
+      <Content/>
       <About />
       <MyProjects/>
       

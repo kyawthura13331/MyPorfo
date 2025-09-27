@@ -62,7 +62,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="contactcss">
+    <div className="contactcss mb-[1px]">
       <div
         ref={contactRef}
         className={`min-h-screen flex flex-col sm:flex-row flex-wrap items-center justify-center  shadow-emerald-400/50 px-4 py-10 gap-0 
