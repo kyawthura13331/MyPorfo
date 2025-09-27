@@ -70,6 +70,13 @@ const Contact = () => {
         inView ? "opacity-100" : "opacity-0"
       }`}
       >
+        {!showForm && (
+    <div className="mt-3 text-center text-sm text-white">
+      <p className="font-semibold"> Hey there!</p>
+      <p className="text-gray-300 p-10">Click photo to contact me.</p>
+    </div>
+  )}
+
         <div
           className={`transition-all duration-1000 ease-in-out cursor-pointer  
         ${
@@ -89,8 +96,10 @@ const Contact = () => {
             className="scale-100 rounded-xl "
             alt="My Photo"
           />
+          
         </div>
-
+        
+            
         <div
           className={`${
             hidden ? "block" : "shadow-amber-50"
