@@ -48,7 +48,7 @@ const Welcome = () => {
         <h1
           className={`${
             inView ? "animate-word-slide-in" : "opacity-0"
-          } text-4xl  ml-30 lg:text-[70px] "md:text-6xl  font-bold `}
+          } text-4xl  ml-70 lg:text-[70px] md:text-6xl w-fit p-2 font-bold `}
         >
           Welcome To My Portfolio
         </h1>

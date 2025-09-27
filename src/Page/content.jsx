@@ -4,6 +4,7 @@ import { nameState, emailState, messageState } from "../Recoil/Atom";
 import myphoto1 from "../assets/media/myphotoFF.jpg";
 import myphoto from "../assets/media/contentphoto.jpg";
 import "./PageCSS/index.css";
+import "./PageCSS/contentcss.css";
 import Footer from "../component/Footer";
 
 const Contact = () => {
@@ -111,12 +112,12 @@ const Contact = () => {
             <div className="inputbox">
               <input
                 type="text"
-             
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="p-3 rounded  text-white focus:outline-none focus:ring-2 focus:ring-emerald-400" 
-              /><span>Your Name</span>
+                className="p-3 rounded  text-white focus:outline-none focus:ring-2 focus:ring-emerald-400"
+              />
+              <span>Your Name</span>
               <i></i>
             </div>
             <div className="inputbox">
@@ -126,7 +127,8 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="p-3 rounded  text-white  "
-              /><span>Your Email</span>
+              />
+              <span>Your Email</span>
               <i></i>
             </div>
             <div className="inputbox">
@@ -141,12 +143,7 @@ const Contact = () => {
               <i></i>
             </div>
 
-            <button
-              type="submit"
-              className="bg-emerald-400 hover:bg-emerald-500 text-black font-bold py-2 rounded transition-colors duration-200"
-            >
-              Send Message
-            </button>
+            <button className="buttoncc left-1/3">Sent Message</button>
           </form>
           <div className="mt-6 text-center text-gray-400 text-xs">
             Or email me directly at{" "}
@@ -158,14 +155,15 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className= {`${
-          showForm && !hidden
-            ? "animate-fade-in"
-            : "moveresetContact pointer-events-none opacity-0"
-        } ml-10`}>
-          <Footer/>
+        <div
+          className={`${
+            showForm && !hidden
+              ? "animate-fade-in"
+              : "moveresetContact pointer-events-none opacity-0"
+          } ml-10`}
+        >
+          <Footer />
         </div>
-       
       </div>
     </div>
   );

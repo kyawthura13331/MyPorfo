@@ -109,16 +109,16 @@ const About = () => {
           <div className="font-montserrat text-xl sm:text-2xl font-bold text-black/80  tracking-wide">
             Skills
           </div>
-          <div className="text-6xl grid gap-5 sm:grid-cols-3  md:grid-cols-4 lg:grid-cols-6 ">
-            <FaHtml5 className="text-red-600 bg-black/80 " />
-            <MdCss className="text-orange-400 bg-black/80"  />
-            <TbBrandJavascript className="text-yellow-800 bg-black/80" />
-            <SiReactquery className="text-blue-200 bg-black/80 "/>
-            <SiTailwindcss className="text-blue-200 bg-black/80"/>
-            <FaBootstrap className="text-yellow-400 bg-black/80"/>
-            <DiNodejs  className="text-blue-200 bg-black/80" />
-            <SiExpress className=" bg-black/80" />
-            <BiLogoMongodb className="bg-gray-500/40 text-emerald-800"/>
+          <div className="text-7xl  grid gap-5 sm:grid-cols-3  md:grid-cols-4 lg:grid-cols-6 ">
+            <FaHtml5 className="text-red-600 p-2 bg-black/80 rounded-2xl " />
+            <MdCss className="text-orange-400 bg-black/80 rounded-2xl"  />
+            <TbBrandJavascript className="text-yellow-800 bg-black/80 rounded-2xl p-2" />
+            <SiReactquery className="text-blue-200 bg-black/80 rounded-2xl p-2 "/>
+            <SiTailwindcss className="text-blue-200 bg-black/80 rounded-2xl p-2"/>
+            <FaBootstrap className="text-yellow-400 bg-black/80 rounded-2xl p-2"/>
+            <DiNodejs  className="text-blue-200 bg-black/80 rounded-2xl p-2" />
+            <SiExpress className=" bg-black/80 rounded-2xl p-2" />
+            <BiLogoMongodb className="bg-black/80 text-emerald-400/90 rounded-2xl p-2"/>
           </div>
         </div>
       </div>

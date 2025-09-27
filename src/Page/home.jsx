@@ -10,7 +10,7 @@ import Footer from "../component/Footer";
 const Home = () => {
  
   return (
-    <div className="autoshow card bg-[#232528] ">
+    <div className="autoshow card bg-[#1f4a8c] ">
       <div className='min-h-screen flex justify-center'>
         <Welcome />
       </div>
