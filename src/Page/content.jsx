@@ -71,9 +71,9 @@ const Contact = () => {
       }`}
       >
         {!showForm && (
-    <div className="mt-3 text-center text-sm text-white">
+    <div className="mt-20 text-center p-10 text-sm text-white">
       <p className="font-semibold"> Hey there!</p>
-      <p className="text-gray-300 p-10">Click photo to contact me.</p>
+      <p className="text-gray-300">Click photo to contact me.</p>
     </div>
   )}
 
@@ -102,8 +102,8 @@ const Contact = () => {
             
         <div
           className={`${
-            hidden ? "block" : "shadow-amber-50"
-          } transition-all duration-1000 ease-in-out 
+            hidden ? "block" : "shadow-amber-50 "
+          } transition-all duration-1000 ease-in-out mt-20 
         ${
           showForm && !hidden
             ? "animate-fade-in"
@@ -165,9 +165,9 @@ const Contact = () => {
           </div>
         </div>
         <div
-          className={`${
+          className={`mt-10 ${
             showForm && !hidden
-              ? "animate-fade-in"
+              ? "animate-fade-in "
               : "moveresetContact pointer-events-none opacity-0"
           } ml-10`}
         >

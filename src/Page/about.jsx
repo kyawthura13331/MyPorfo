@@ -7,7 +7,6 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { SiReactquery } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { TbBrandNodejs } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { DiNodejs } from "react-icons/di";
@@ -51,10 +50,10 @@ const About = () => {
   }, []);
 
   return (
-    <section className="aboutcss py-20 px-4 sm:px-6 md:px-12 lg:px-20 bg-[#CBD0B9] min-h-screen flex flex-col items-center justify-center transition-all duration-700">
+    <section className="aboutcss py-30 px-4 sm:px-6 md:px-12 lg:px-20 bg-[#CBD0B9] min-h-screen flex flex-col items-center justify-center transition-all duration-700">
       <div
         ref={aboutRef}
-        className={` flex flex-col md:flex-row items-center gap-8 w-full max-w-4xl bg-[#ffffff] rounded-3xl shadow-md shadow-black/20 p-6 sm:p-10 mb-10 
+        className={` flex flex-col md:flex-row items-center gap-8 w-full max-w-4xl bg-[#ffffff] rounded-3xl shadow-md shadow-black/20 p-6 sm:p-10 mb-10
           ${aboutInView ? "animateABOUT-fade-in" : "opacity-0"}`}
       >
         <Link to="/content" className="shrink-0">
@@ -109,7 +108,7 @@ const About = () => {
           <div className="font-montserrat text-xl sm:text-2xl font-bold text-black/80  tracking-wide">
             Skills
           </div>
-          <div className="text-7xl  grid gap-5 sm:grid-cols-3  md:grid-cols-4 lg:grid-cols-6 ">
+          <div className="text-7xl  grid gap-5 grid-cols-3 md:grid-cols-4 lg:grid-cols-6 ">
             <FaHtml5 className="text-red-600 p-2 bg-black/80 rounded-2xl " />
             <MdCss className="text-orange-400 bg-black/80 rounded-2xl"  />
             <TbBrandJavascript className="text-yellow-800 bg-black/80 rounded-2xl p-2" />
@@ -145,4 +144,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About;1
